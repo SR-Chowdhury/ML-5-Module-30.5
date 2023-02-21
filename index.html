@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ML-5 Moudle 30.5 Recap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="container">
+
+    <header>
+        <h1 class="text-center">Integrated JS Bonus Content</h1>
+    </header>
+
+    <main>
+        <section>
+            <h3>Recap</h3>
+            <div>
+                <ol>
+                    <li>How to use JS with HTML & CSS</li>
+                    <li>How to get element / elements from DOM</li>
+                    <li>Dynamically add element to the DOM</li>
+                    <li>How to get elements value from a DOM element</li>
+                    <li>DOM method [addEventListener()]</li>
+                    <li>Use function to reduce code</li>
+                    <li>Event Delegate: Event Delegation is a pattern based upon the concept of Event Bubbling. It is an
+                        event-handling pattern that allows you to handle events at a higher level in the DOM tree other
+                        than the level where the event was first received. <br>
+                        <code>N>B> its works Top to Bottom</code> <a
+                            href="https://www.freecodecamp.org/news/event-delegation-javascript/#:~:text=Event%20Delegation%20is%20a%20pattern,the%20event%20was%20first%20received.">Read
+                            More..</a>
+                    </li>
+                    <li>Event Bubble: Event Bubbling is a concept in the DOM (Document Object Model). It happens when an
+                        element receives an event, and that event bubbles up (or you can say is transmitted or
+                        <strong>propagated</strong>) to its parent and ancestor elements in the DOM tree until it gets
+                        to the root element. <br>
+                        <code>N>B> its works Bottom To Top</code> <a
+                            href="https://www.freecodecamp.org/news/event-bubbling-in-javascript/">Read More..</a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            <h3>JS Error</h3>
+            <div>
+                <ol>
+                    <li><strong>Range Error: when a range of expected values is required</strong>Less happend in JS rather than other language
+                    <pre>
+                        const num = [10, 15, 30];
+                        console.log(num[20]);
+                        // Output: undefined
+                    </pre>
+                    </li>
+                    <li><strong>Reference Error: where a variable reference can't be found or hasn't been declared</strong>
+                        <pre>
+                        console.log(x);
+                        // VM1161:1 Uncaught ReferenceError: x is not defined
+                    </pre></li>
+                    <li><strong>Syntax Error: when you use a predefined syntax incorrectly.</strong>
+                        <pre>
+                        for(int i=0; i<; i++) {}
+                        //Uncaught SyntaxError: Unexpected identifier 'i'
+                        </pre>
+                    </li>
+                    <li><strong>Type Error: when a value is used outside the scope of its data type</strong>
+                        <pre>
+                        const num = 123
+                        num.toUpperCase()
+                        // TypeError: num.toUpperCase is not a function
+                        </pre>
+                    </li>
+                    <li><a href="https://blog.bitsrc.io/types-of-native-errors-in-javascript-you-must-know-b8238d40e492">Read More...</a></li>
+                    <li><a href="https://www.scaler.com/topics/types-of-errors-in-javascript/">Read More...</a></li>
+                </ol>
+                <ul>
+                    <li><strong>Error Handling:</strong></li>
+                    <li>try catch function
+                        <pre>
+                        try {
+                        
+                        } 
+                        catch(e) 
+                        {
+
+                        }</pre>
+                        We can you finally (optional). <br><code>N>B> The try...catch statement is comprised of a try block and either a catch block, a finally block, or both. The code in the try block is executed first, and if it throws an exception, the code in the catch block will be executed. The code in the finally block will always be executed before control flow exits the entire construct.</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">Read More...</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3>Date Object in JS</h3>
+            <div>
+                <ol>
+                    <li>can be declared by five ways</li>
+                    <li>time zone make problem sometimes <br><code>Solution: UTC time zone</code></li>
+                    <li>getDate(), getDay(), ... <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">Read More...</a></li>
+                    <li>Compare Date</li>
+                    <li><a href="https://momentjs.com/">Moment JS</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            <h3>Validation in JS</h3>
+            <div>
+                <ol>
+                    <li>typeof number | string | object</li>
+                    <li>Array.isArray</li>
+                    <li>isNaN(true | false)</li>
+                    <li>function() {'undefined'}</li>
+                    <li></li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
